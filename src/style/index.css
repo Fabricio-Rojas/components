@@ -1,0 +1,65 @@
+body {
+    background-color: #f2f4f6;
+}
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+}
+
+header {
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #000;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    line-height: 60px;
+}
+
+header i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+header ul li {
+    float: left;
+    margin-left: 10px;
+    line-height: 60px;
+}
+
+header ul li button {
+    font-size: 20px;
+    background-color: #fff;
+}
+
+section {
+    background-image: url(https://raw.githubusercontent.com/Fabricio-Rojas/web-assets/main/image/uycJD69.jpg);
+    background-position: 0 -100px;
+    height: 500px;
+    overflow: hidden;
+}
+
+section div {
+    height: 200px;
+    width: 500px;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section img {
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
