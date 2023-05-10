@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Button() {
+function Button(props) {
   return (
-    <div className='buttons'>
-      <button className='primary'>Book Now</button>
-      <button className='secondary'>See Listings</button>
-    </div>
+    <>
+      <button className={props.type}>{props.text}</button>
+    </>
   )
 }
 

@@ -2,15 +2,18 @@ import React from 'react'
 import Header from './Header'
 import Button from './Button';
 
-function Banner() {
+function Banner(props) {
   return (
     <>
         <Header />
         <section>
             <div className='text-area'>
-                <h2>Travel to place of your dreams NOW</h2>
-                <p>Book flights and travel to the most exotic places in the world for a great price, alogn with getting great reservations at top quality hotels and resorts</p>
-                <Button />
+                <h2>{props.title}</h2>
+                <p>{props.text}</p>
+                <div className='buttons'>
+                  <Button type='primary' text='Book now'/>
+                  <Button type='secondary' text='See Listing'/>
+                </div>
             </div>
         </section>
     </>

@@ -104,6 +104,26 @@ section img {
     z-index: 1;
 }
 
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.resort-image img {
+    border-radius: 20px;
+}
+
+.resort-image p {
+    font-size: 25px;
+}
+
+.resort-image p + p {
+    font-size: 20px;
+}
+
 footer {
     background-color: #99B7CF;
     color: #fff;
