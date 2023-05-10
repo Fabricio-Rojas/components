@@ -23,10 +23,13 @@ header div {
 
 header h2 {
     line-height: 60px;
+    float: right;
 }
 
-header i {
-    font-size: 30px;
+header img {
+    display: inline;
+    width: 60px;
+    height: auto;
     margin-right: 20px;
 }
 
@@ -48,18 +51,118 @@ section {
     overflow: hidden;
 }
 
-section div {
-    height: 200px;
-    width: 500px;
+section .text-area {
+    height: 325px;
+    width: 600px;
+    padding: 50px;
     position: relative;
     z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-area p {
+    margin-top: 20px;
+}
+
+section .buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid #27AADA;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #fff;
+    color: #27AADA;
+}
+
+.secondary {
+    background-color: #27AADA;
+    color: #fff;
 }
 
 section img {
     position: relative;
     top: -100px;
     z-index: 1;
+}
+
+footer {
+    background-color: #99B7CF;
+    color: #fff;
+    padding: 40px 0;
+}
+  
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+.contact-info,
+.social-media {
+    text-align: center;
+}
+
+.social-media {
+    width: 150px;
+    height: 150px;
+    padding: 50px 0;
+}
+  
+.contact-info h3,
+.social-media h3 {
+    margin-top: 0;
+}
+  
+.contact-info p,
+.social-media ul {
+    margin-bottom: 10px;
+}
+  
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+  
+.social-media a {
+    color: #fff;
+    font-size: 25px;
+}
+  
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.footer-bottom p {
+    margin-bottom: 0;
 }
