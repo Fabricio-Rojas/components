@@ -39,15 +39,20 @@ header ul li {
     line-height: 60px;
 }
 
-header ul li button {
+header ul li a {
     font-size: 20px;
-    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #27AADA;
+    text-decoration: underline #27AADA;
 }
 
 section {
     background-image: url(https://raw.githubusercontent.com/Fabricio-Rojas/web-assets/main/image/uycJD69.jpg);
     background-position: 0 -100px;
-    height: 500px;
+    height: calc(100vh - 30px);
     overflow: hidden;
 }
 
@@ -98,6 +103,10 @@ section .buttons {
     color: #fff;
 }
 
+.buttons button:hover {
+    border: 3px solid #5cccf4;
+}
+
 section img {
     position: relative;
     top: -100px;
@@ -108,7 +117,7 @@ section img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     text-align: center;
 }
 
@@ -117,11 +126,21 @@ section img {
 }
 
 .resort-image p {
+    position: relative;
+    top: -70px;
     font-size: 25px;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    letter-spacing: 1px;
 }
 
 .resort-image p + p {
     font-size: 20px;
+}
+
+.resort-image:hover {
+    transform: translate(0px, -20px) scale(1.05);
+    transition: all .5s ease-in-out;
 }
 
 footer {

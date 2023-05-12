@@ -10,9 +10,9 @@ function Header() {
             </aside>
             <nav>
                 <ul>
-                    <li><button>Book Now</button></li>
-                    <li><button>Contact Us</button></li>
-                    <li><button>See Listings</button></li>
+                    <li><a href='/#'>Book Now</a></li>
+                    <li><a href='/#'>Contact Us</a></li>
+                    <li><a href='/#'>See Listings</a></li>
                 </ul>
             </nav>
         </div>
